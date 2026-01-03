@@ -29,7 +29,7 @@ func main() {
 			"http://localhost:3000",
 			"https://book-ui.onrender.com",
 		"https://book-ui-n456.onrender.com",
-		"https://bookai045.netlify.app},
+		"https://bookai045.netlify.app"},
 		// use frontend URL in prod
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
@@ -42,5 +42,6 @@ func main() {
 	r.Run(":8080")
 
 }
+
 
 
