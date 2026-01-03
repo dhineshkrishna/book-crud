@@ -27,7 +27,8 @@ func main() {
 	r.Use(cors.New(cors.Config{
 		AllowOrigins: []string{
 			"http://localhost:3000",
-			"https://book-ui.onrender.com"},
+			"https://book-ui.onrender.com",
+		"https://book-ui-n456.onrender.com"},
 		// use frontend URL in prod
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
@@ -40,3 +41,4 @@ func main() {
 	r.Run(":8080")
 
 }
+
